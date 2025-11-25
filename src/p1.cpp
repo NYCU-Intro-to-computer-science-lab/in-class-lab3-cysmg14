@@ -4,17 +4,14 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    
+    long long n;
     long long factorial(int n);
     {
         if (n==1)
           return 1;
         else
           return factorial(n-1)*n;
-        cout << factorial(n) << endl;
-        return 0;
+        
     }
 
     long long sum(int n);
@@ -23,10 +20,11 @@ int main() {
           return 1;
         else
           return sum(n-1)+n;
-        cout << sum(n) << endl;
-        return 0;
+        
     }
 
+    cin >> n;
+    cout << factorial(n) << endl << sum(n) <<  endl;
 
-
+    return 0;
 }
