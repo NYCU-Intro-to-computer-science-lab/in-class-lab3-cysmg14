@@ -7,6 +7,8 @@ using namespace std;
     {
         if (n==1)
           return 1;
+        else if (n==0)
+          return 1;
         else
           return factorial(n-1)*n;
         
@@ -15,6 +17,8 @@ using namespace std;
     long long sum(long long n)
     {
         if (n==1)
+          return 1;
+        else if (n==0)
           return 1;
         else
           return sum(n-1)+n;
