@@ -3,9 +3,7 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    long long n;
-    long long factorial(int n);
+    long long factorial(long long n)
     {
         if (n==1)
           return 1;
@@ -14,7 +12,7 @@ int main() {
         
     }
 
-    long long sum(int n);
+    long long sum(long long n)
     {
         if (n==1)
           return 1;
@@ -22,7 +20,8 @@ int main() {
           return sum(n-1)+n;
         
     }
-
+int main() {
+    long long n;
     cin >> n;
     cout << factorial(n) << endl << sum(n) <<  endl;
 
